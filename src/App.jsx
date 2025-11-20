@@ -1,12 +1,12 @@
 import './App.css'
-import Coleccion from './components/Coleccion.jsx'
-import Saludo from './components/Saludo.jsx'
+import { Saludo } from './components/Saludo.jsx'
+import Evento from './components/Evento.jsx'
 
 export default function App() {
   return (
     <>
       <div>
-        <Coleccion />
+        <Evento />
       </div>
     </>
   )
