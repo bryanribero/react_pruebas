@@ -39,6 +39,7 @@ export default function Form() {
 
         <label htmlFor="email">Email</label>
         <input
+          id="email"
           type="email"
           name="email"
           value={email}
@@ -49,6 +50,7 @@ export default function Form() {
         <br />
         <label htmlFor="pass">Password</label>
         <input
+          id="pass"
           type="password"
           name="pass"
           value={pass}
