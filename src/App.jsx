@@ -5,12 +5,13 @@ import Form from './components/Form.jsx'
 import Contador from './components/Contador.jsx'
 import ListaTareas from './components/ListaTareas.jsx'
 import FormularioUno from './components/Formulario.jsx'
+import UseEffect from './components/UseEffect.jsx'
 
 export default function App() {
   return (
     <>
       <div>
-        <FormularioUno />
+        <UseEffect />
       </div>
     </>
   )
