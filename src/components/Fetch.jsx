@@ -6,7 +6,9 @@ export default function Fetch() {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const response = await fetch('http://localhost:3000/producto')
+        const response = await fetch(
+          'http://localhost:3000/producto?include=comerciante&id_comerciante=2'
+        )
 
         const data = await response.json()
 
