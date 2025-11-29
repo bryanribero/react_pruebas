@@ -7,12 +7,13 @@ import ListaTareas from './components/ListaTareas.jsx'
 import FormularioUno from './components/Formulario.jsx'
 import UseEffect from './components/UseEffect.jsx'
 import Fetch from './components/Fetch.jsx'
+import TodoList from './components/TodoList.jsx'
 
 export default function App() {
   return (
     <>
       <div>
-        <Fetch />
+        <TodoList />
       </div>
     </>
   )
