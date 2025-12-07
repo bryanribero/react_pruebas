@@ -10,12 +10,13 @@ import Fetch from './components/Fetch.jsx'
 import TodoList from './components/TodoList.jsx'
 import Tareas from './components/Tareas.jsx'
 import FetchNuevo from './components/FetchNuevo.jsx'
+import SendData from './components/SendData.jsx'
 
 export default function App() {
   return (
     <>
       <div>
-        <FetchNuevo />
+        <SendData />
       </div>
     </>
   )
