@@ -6,6 +6,7 @@ import ProductoInfo from './dynamicPages/ProductoInfo.jsx'
 import ThemeProvider from './Context/ThemeProvider.jsx'
 import Login from './pages/Login.jsx'
 import LoginProvider from './Context/LoginProvider.jsx'
+import PrivateRoute from '../Routes/PrivateRoute.jsx'
 
 export default function App() {
   return (
@@ -13,7 +14,14 @@ export default function App() {
       <ThemeProvider>
         <LoginProvider>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
+              }
+            />
             <Route path="/login" element={<Login />} />
             <Route path="/productos" element={<Productos />} />
             <Route path="/productos/:id" element={<ProductoInfo />} />
