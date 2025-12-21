@@ -15,16 +15,19 @@ export default function LoginProvider({ children }) {
   }
 
   function verifyLogin(userAcount, passAcount) {
-    const success = userAcount === user && passAcount === pass
+    const success = userAcount.trim().toUpperCase() === 'ADMIN' && passAcount === '1234'
+
+    if (!isLogin) {
+      setPass('')
+      setUser('')
+    }
 
     setIsLogin(success)
     return success
   }
 
   return (
-    <LoginContext.Provider
-      value={{ handlerUser, handlerPass, verifyLogin, isLogin, user, pass }}
-    >
+    <LoginContext.Provider value={{ handlerUser, handlerPass, verifyLogin, isLogin, user, pass }}>
       {children}
     </LoginContext.Provider>
   )

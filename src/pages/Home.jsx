@@ -8,6 +8,12 @@ export default function Home() {
     <div>
       <h1>Bienvenido al home</h1>
       <Link to={'/productos'}>Ir a productos</Link>
+      <Link
+        to={'/login'}
+        style={{ position: 'absolute', left: '40px', top: '20px' }}
+      >
+        Login
+      </Link>
       <br />
       <br />
       <button onClick={toggleTheme}>Cambiar thema</button>
